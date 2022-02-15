@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/artFragment">
+
+    <fragment
+        android:id="@+id/artFragment"
+        android:name="com.learprogramming.artbook.presentation.ArtFragment"
+        android:label="fragment_art"
+        tools:layout="@layout/fragment_art" >
+        <action
+            android:id="@+id/artToDetail"
+            app:destination="@id/artDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artDetailFragment"
+        android:name="com.learprogramming.artbook.presentation.ArtDetailFragment"
+        android:label="fragment_art_detail"
+        tools:layout="@layout/fragment_art_detail" >
+        <action
+            android:id="@+id/detailToApi"
+            app:destination="@id/imageApiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageApiFragment"
+        android:name="com.learprogramming.artbook.presentation.ImageApiFragment"
+        android:label="fragment_image_api"
+        tools:layout="@layout/fragment_image_api" />
+</navigation>

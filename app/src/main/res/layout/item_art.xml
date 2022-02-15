@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="@dimen/std_margin">
+
+    <ImageView
+        android:id="@+id/artRowImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:src="@android:drawable/ic_dialog_dialer"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/artDescContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/artRowNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Art Name"
+            android:textSize="28sp"
+            android:layout_marginStart="@dimen/std_miner_margin"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/artRowArtistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ArtistName"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/std_miner_margin"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/artRowYearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1882"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/std_miner_margin"/>
+
+    </LinearLayout>
+</LinearLayout>
